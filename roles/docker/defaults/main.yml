@@ -2,8 +2,8 @@
 gnbsim:
   docker:
     container:
-      image: omecproject/5gc-gnbsim:main-PR_88-cc0d21b
-      prefix: gnbsim
+      image: docker.io/isilincoln/gnbsim:demo
+      prefix: gnbsim-lincoln
       count: 2
     network:
       macvlan:
