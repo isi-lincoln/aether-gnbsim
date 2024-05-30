@@ -4,7 +4,7 @@ gnbsim:
     container:
       image: docker.io/isilincoln/gnbsim:demo
       prefix: gnbsim-lincoln
-      count: 2
+      count: 1
     network:
       macvlan:
         name: gnbnet

@@ -1,18 +1,18 @@
 gnbsim:
   docker:
     container:
-      image: omecproject/5gc-gnbsim:main-PR_88-cc0d21b
-      prefix: gnbsim
-      count: 2
+      image: docker.io/isilincoln/gnbsim:demo
+      prefix: gnbsim-lincoln
+      count: 1
     network:
       macvlan:
         name: gnbnet
 
   router:
-    data_iface: ens18
+    data_iface: eth3
     macvlan:
       iface: gnbaccess
-      subnet_prefix: "172.20"
+      subnet_prefix: "172.26"
 
   servers:
     0:

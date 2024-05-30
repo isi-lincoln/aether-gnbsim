@@ -51,3 +51,5 @@ gnbsim-simulator-run:
 gnbsim-install: gnbsim-docker-install gnbsim-docker-router-install gnbsim-docker-start
 gnbsim-uninstall:  gnbsim-docker-stop gnbsim-docker-router-uninstall gnbsim-docker-uninstall
 gnbsim-reset: gnbsim-docker-stop gnbsim-docker-start
+
+gnbsim-lincoln: gnbsim-docker-install gnbsim-docker-start
